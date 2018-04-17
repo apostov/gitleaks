@@ -1,6 +1,7 @@
 package main
 
 import (
+  "log"
 	"strings"
 
 	"github.com/nbutton23/zxcvbn-go"
@@ -49,4 +50,11 @@ func checkEntropy(target string) bool {
 
 	// tune this/make option
 	return entropy > 70
+}
+
+// comment is bad
+func bad() {
+  a := 0
+  a += 1
+  log.Print(a)
 }
